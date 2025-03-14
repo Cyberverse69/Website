@@ -1,66 +1,54 @@
-/* General reset */
-* {
+/* Apply a background color to the whole page */
+body {
+    background-color: #f4f4f9; /* Light grey background */
+    color: #333333; /* Dark grey text for better readability */
+    font-family: Arial, sans-serif; /* Set the font */
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-/* Container for the About Me section */
-.about-container {
+/* Styling for the hero section */
+.hero {
+    background-image: url('https://raw.githubusercontent.com/Cyberverse69/Website/master/myimage.jpg'); /* Your image URL */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Full viewport height */
     display: flex;
-    align-items: center;
     justify-content: center;
-    position: relative;
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    color: #ffffff; /* White text on image */
+    opacity: 0.85;
 }
 
-/* Image section */
-.about-image {
-    position: relative;
-    flex: 1;
-    overflow: hidden;
-    width: 100%;
-}
-
-.about-image img {
-    width: 100%;
-    height: auto;
-    opacity: 0.6; /* Reduced opacity */
-    object-fit: cover;
-}
-
-/* Text section */
-.about-text {
-    position: absolute;
-    top: 20%;
-    left: 10%;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for readability */
-    max-width: 500px; /* To prevent text from stretching too wide */
-}
-
-/* Heading styles */
-h1 {
-    font-size: 2.5rem;
+/* Add some margin to the text inside the hero */
+.hero h1 {
     margin-bottom: 10px;
 }
 
-h2 {
-    font-size: 1.8rem;
-    margin-top: 20px;
-    margin-bottom: 15px;
+/* Add styles for the About Me section */
+.about {
+    padding: 50px;
+    background-color: #ffffff; /* White background for the section */
+    color: #333333; /* Dark text */
 }
 
-/* Paragraph styles */
-p {
-    font-size: 1rem;
+.about h2 {
+    color: #007bff; /* Blue color for the section header */
+}
+
+/* Add some padding to paragraphs in the About Me section */
+.about p {
     line-height: 1.6;
-    margin-bottom: 10px;
+    font-size: 18px;
 }
 
-/* Strong text */
-strong {
-    font-weight: bold;
+/* Add styles for links if any */
+a {
+    color: #007bff; /* Blue color for links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
