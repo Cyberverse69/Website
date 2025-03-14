@@ -1,0 +1,66 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container for the About Me section */
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Image section */
+.about-image {
+    position: relative;
+    flex: 1;
+    overflow: hidden;
+    width: 100%;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    opacity: 0.6; /* Reduced opacity */
+    object-fit: cover;
+}
+
+/* Text section */
+.about-text {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for readability */
+    max-width: 500px; /* To prevent text from stretching too wide */
+}
+
+/* Heading styles */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+/* Paragraph styles */
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Strong text */
+strong {
+    font-weight: bold;
+}
